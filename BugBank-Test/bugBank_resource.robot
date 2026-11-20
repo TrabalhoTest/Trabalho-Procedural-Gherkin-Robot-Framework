@@ -42,7 +42,7 @@ Clicar em Registrar
     Click Element    locator=${REGISTRAR}
 
 Preencher e-mail
-     Click Element    locator=${COLOCAR_EMAIL_REGISTRAR}
+    Click Element    locator=${COLOCAR_EMAIL_REGISTRAR}
 
 #Preencher Nome
 

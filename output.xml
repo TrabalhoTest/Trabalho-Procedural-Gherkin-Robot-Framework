@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5.1 (Python 3.14.10 on win32)" generated="2026-11-20T18:27:57.399003" rpa="false" schemaversion="5">
+<suite id="s1" name="bugBank teste" source="C:\Users\INFOTECH\Documents\GitHub\Trabalho-Procedural-Gherkin-Robot-Framework\BugBank-Test\bugBank_teste.robot">
+<test id="s1-t1" name="Caso 01 - Cadastro de uma conta" line="8">
+<kw name="Abrir o navegador" owner="bugBank_resource" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-11-20T18:27:57.653752" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-11-20T18:27:57.653580" elapsed="2.001899"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-11-20T18:27:59.656460" elapsed="0.037668"/>
+</kw>
+<status status="PASS" start="2026-11-20T18:27:57.652978" elapsed="2.041261"/>
+</kw>
+<kw name="Acessar a página do BugBank" owner="bugBank_resource">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-11-20T18:27:59.695183" level="INFO">Opening url 'https://bugbank.netlify.app/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-11-20T18:27:59.695047" elapsed="0.932231"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${COLOCAR_EMAIL_LOGIN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-11-20T18:28:00.627426" elapsed="0.054273"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${COLOCAR_SENHA_LOGIN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-11-20T18:28:00.681844" elapsed="0.007262"/>
+</kw>
+<status status="PASS" start="2026-11-20T18:27:59.694699" elapsed="0.994491"/>
+</kw>
+<kw name="Clicar em Registrar" owner="bugBank_resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-11-20T18:28:00.689889" level="INFO">Clicking element '//button[normalize-space()='Registrar']'.</msg>
+<arg>locator=${REGISTRAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-20T18:28:00.689699" elapsed="0.031019"/>
+</kw>
+<status status="PASS" start="2026-11-20T18:28:00.689474" elapsed="0.031334"/>
+</kw>
+<kw name="Fechar o navegador" owner="bugBank_resource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-11-20T18:28:00.721402" elapsed="2.101253"/>
+</kw>
+<status status="PASS" start="2026-11-20T18:28:00.721184" elapsed="2.101565"/>
+</kw>
+<doc>Esse teste verifica o menu livros do site da Amazom e verifica a categoria o que todo mundo está lendo</doc>
+<tag>categorias</tag>
+<tag>menus</tag>
+<tag>smooke</tag>
+<status status="PASS" start="2026-11-20T18:27:57.652194" elapsed="5.170760"/>
+</test>
+<test id="s1-t2" name="Caso 02 - Login com a conta criado" line="22">
+<kw name="Abrir o navegador" owner="bugBank_resource" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-11-20T18:28:02.824800" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-11-20T18:28:02.824666" elapsed="0.788602"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-11-20T18:28:03.613410" elapsed="0.031962"/>
+</kw>
+<status status="PASS" start="2026-11-20T18:28:02.824381" elapsed="0.821079"/>
+</kw>
+<kw name="Acessar a página do BugBank" owner="bugBank_resource">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-11-20T18:28:03.646179" level="INFO">Opening url 'https://bugbank.netlify.app/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-11-20T18:28:03.646057" elapsed="0.672186"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${COLOCAR_EMAIL_LOGIN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-11-20T18:28:04.318390" elapsed="0.012115"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${COLOCAR_SENHA_LOGIN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-11-20T18:28:04.330644" elapsed="0.007141"/>
+</kw>
+<status status="PASS" start="2026-11-20T18:28:03.645821" elapsed="0.692045"/>
+</kw>
+<kw name="Fechar o navegador" owner="bugBank_resource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-11-20T18:28:04.338421" elapsed="2.074010"/>
+</kw>
+<status status="PASS" start="2026-11-20T18:28:04.338210" elapsed="2.074312"/>
+</kw>
+<status status="PASS" start="2026-11-20T18:28:02.823896" elapsed="3.588815"/>
+</test>
+<status status="PASS" start="2026-11-20T18:27:57.400076" elapsed="9.013556"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">categorias</stat>
+<stat pass="1" fail="0" skip="0">menus</stat>
+<stat pass="1" fail="0" skip="0">smooke</stat>
+</tag>
+<suite>
+<stat name="bugBank teste" id="s1" pass="2" fail="0" skip="0">bugBank teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
