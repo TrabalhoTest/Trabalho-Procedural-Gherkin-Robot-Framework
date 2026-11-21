@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5.1 (Python 3.14.10 on win32)" generated="2026-11-20T22:11:58.025273" rpa="false" schemaversion="5">
+<suite id="s1" name="bugBank teste" source="C:\Users\INFOTECH\Documents\GitHub\Trabalho-Procedural-Gherkin-Robot-Framework\BugBank-Test\bugBank_teste.robot">
+<kw name="Abrir o navegador" owner="bugBank_resource" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-11-20T22:11:58.280719" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-11-20T22:11:58.280543" elapsed="0.318672"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-11-20T22:11:58.599394" elapsed="0.028750"/>
+</kw>
+<status status="PASS" start="2026-11-20T22:11:58.279995" elapsed="0.348258"/>
+</kw>
+<test id="s1-t1" name="Caso 01 - Cadastro de uma conta" line="8">
+<kw name="Acessar a página do BugBank" owner="bugBank_resource">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-11-20T22:11:58.629273" level="INFO">Opening url 'https://bugbank.netlify.app/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-11-20T22:11:58.629144" elapsed="0.343142"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${COLOCAR_EMAIL_LOGIN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-11-20T22:11:58.972437" elapsed="0.010230"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${COLOCAR_SENHA_LOGIN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-11-20T22:11:58.982839" elapsed="0.007853"/>
+</kw>
+<status status="PASS" start="2026-11-20T22:11:58.628912" elapsed="0.361873"/>
+</kw>
+<kw name="Clicar em Registrar" owner="bugBank_resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-11-20T22:11:58.991519" level="INFO">Clicking element '//button[normalize-space()='Registrar']'.</msg>
+<arg>locator=${REGISTRAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-20T22:11:58.991327" elapsed="0.033335"/>
+</kw>
+<status status="PASS" start="2026-11-20T22:11:58.991095" elapsed="0.033665"/>
+</kw>
+<kw name="Preencher e-mail" owner="bugBank_resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-11-20T22:11:59.025483" level="INFO">Clicking element '//form[@class='styles__ContainerFormRegister-sc-7fhc7g-0 keVbpY']//input[@placeholder='Informe seu e-mail']'.</msg>
+<arg>locator=${COLOCAR_EMAIL_REGISTRAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-20T22:11:59.025284" elapsed="0.348790"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-20T22:11:59.374491" level="INFO">Typing text 'teste@exemplo.com' into text field '//form[@class='styles__ContainerFormRegister-sc-7fhc7g-0 keVbpY']//input[@placeholder='Informe seu e-mail']'.</msg>
+<arg>locator=${COLOCAR_EMAIL_REGISTRAR}</arg>
+<arg>text=teste@exemplo.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-20T22:11:59.374238" elapsed="0.042921"/>
+</kw>
+<status status="PASS" start="2026-11-20T22:11:59.025035" elapsed="0.392217"/>
+</kw>
+<kw name="Preencher Nome" owner="bugBank_resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-11-20T22:11:59.417986" level="INFO">Clicking element '//input[@placeholder='Informe seu Nome']'.</msg>
+<arg>locator=${COLOCAR_NOME_REFISTRAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-20T22:11:59.417792" elapsed="0.023452"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-20T22:11:59.441654" level="INFO">Typing text 'Teste' into text field '//input[@placeholder='Informe seu Nome']'.</msg>
+<arg>locator=${COLOCAR_NOME_REFISTRAR}</arg>
+<arg>text=Teste</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-20T22:11:59.441409" elapsed="0.019609"/>
+</kw>
+<status status="PASS" start="2026-11-20T22:11:59.417556" elapsed="0.043554"/>
+</kw>
+<kw name="Preencher Senha" owner="bugBank_resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-11-20T22:11:59.461848" level="INFO">Clicking element '//form[@class='styles__ContainerFormRegister-sc-7fhc7g-0 keVbpY']//input[@placeholder='Informe sua senha']'.</msg>
+<arg>locator=${COLOCAR_SENHA_REFISTRAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-20T22:11:59.461647" elapsed="0.022973"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-11-20T22:11:59.485018" level="INFO">Typing password into text field '//form[@class='styles__ContainerFormRegister-sc-7fhc7g-0 keVbpY']//input[@placeholder='Informe sua senha']'.</msg>
+<msg time="2026-11-20T22:11:59.495034" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>locator=${COLOCAR_SENHA_REFISTRAR}</arg>
+<arg>password=123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-20T22:11:59.484777" elapsed="0.019019"/>
+</kw>
+<status status="PASS" start="2026-11-20T22:11:59.461407" elapsed="0.042476"/>
+</kw>
+<kw name="Preencher Confirmação de Senha" owner="bugBank_resource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${COLOCAR_CONFIRMAR_SENHA_REFISTRAR}</arg>
+<arg>timeout=3s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-11-20T22:11:59.504399" elapsed="0.007212"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-11-20T22:11:59.511945" level="INFO">Clicking element '//input[@placeholder='Informe a confirmação da senha']'.</msg>
+<arg>locator=${COLOCAR_CONFIRMAR_SENHA_REFISTRAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-20T22:11:59.511748" elapsed="0.021349"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-11-20T22:11:59.533504" level="INFO">Typing password into text field '//input[@placeholder='Informe a confirmação da senha']'.</msg>
+<msg time="2026-11-20T22:11:59.543745" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>locator=${COLOCAR_CONFIRMAR_SENHA_REFISTRAR}</arg>
+<arg>password=123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-20T22:11:59.533261" elapsed="0.018979"/>
+</kw>
+<status status="PASS" start="2026-11-20T22:11:59.504185" elapsed="0.048143"/>
+</kw>
+<kw name="Clicar em criar conta com saldo" owner="bugBank_resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-11-20T22:11:59.553075" level="INFO">Clicking element '//label[@id='toggleAddBalance']'.</msg>
+<msg time="2026-11-20T22:12:00.802797" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-11-20T22:12:00.802973" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;label id="toggleAddBalance" class="styles__Input-sc-1pngcbh-1 dTSgXK"&gt;&lt;/label&gt; is not clickable at point (1409, 582). Other element would receive the click: &lt;span class="styles__Span-sc-1pngcbh-2 fLTrsw"&gt;&lt;/span&gt;
+  (Session info: chrome=157.0.8103.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff7de20d655]
+	(No symbol) [0x7ff7de104790]
+	(No symbol) [0x7ff7ddf72fb3]
+	(No symbol) [0x7ff7de7bc0d2]
+	(No symbol) [0x7ff7de7ba6f3]
+	(No symbol) [0x7ff7de7b8647]
+	(No symbol) [0x7ff7de7b7dce]
+	(No symbol) [0x7ff7de7ac9fa]
+	(No symbol) [0x7ff7de7c90da]
+	(No symbol) [0x7ff7de7ac439]
+	(No symbol) [0x7ff7de7ac3d0]
+	(No symbol) [0x7ff7ddfa6bf1]
+	(No symbol) [0x7ff7ddf8c109]
+	(No symbol) [0x7ff7ddf8d433]
+	(No symbol) [0x7ff7de6a7041]
+	(No symbol) [0x7ff7de6c5c76]
+	(No symbol) [0x7ff7de6bc340]
+	(No symbol) [0x7ff7de33c9be]
+	(No symbol) [0x7ff7de112fa5]
+	(No symbol) [0x7ff7de10e2d4]
+	(No symbol) [0x7ff7de10e464]
+	(No symbol) [0x7ff7de0f731c]
+	(No symbol) [0x7ff82d077374]
+	(No symbol) [0x7ff82e25cc91]
+</msg>
+<arg>locator=${CRIAR_CONTA_COM_SALDO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-11-20T22:11:59.552882" elapsed="1.285558">ElementClickInterceptedException: Message: element click intercepted: Element &lt;label id="toggleAddBalance" class="styles__Input-sc-1pngcbh-1 dTSgXK"&gt;&lt;/label&gt; is not clickable at point (1409, 582). Other element would receive the click: &lt;span class="styles__Span-sc-1pngcbh-2 fLTrsw"&gt;&lt;/span&gt;
+  (Session info: chrome=157.0.8103.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff7de20d655]
+	(No symbol) [0x7ff7de104790]
+	(No symbol) [0x7ff7ddf72fb3]
+	(No symbol) [0x7ff7de7bc0d2]
+	(No symbol) [0x7ff7de7ba6f3]
+	(No symbol) [0x7ff7de7b8647]
+	(No symbol) [0x7ff7de7b7dce]
+	(No symbol) [0x7ff7de7ac9fa]
+	(No symbol) [0x7ff7de7c90da]
+	(No symbol) [0x7ff7de7ac439]
+	(No symbol) [0x7ff7de7ac3d0]
+	(No symbol) [0x7ff7ddfa6bf1]
+	(No symbol) [0x7ff7ddf8c109]
+	(No symbol) [0x7ff7ddf8d433]
+	(No symbol) [0x7ff7de6a7041]
+	(No symbol) [0x7ff7de6c5c76]
+	(No symbol) [0x7ff7de6bc340]
+	(No symbol) [0x7ff7de33c9be]
+	(No symbol) [0x7ff7de112fa5]
+	(No symbol) [0x7ff7de10e2d4]
+	(No symbol) [0x7ff7de10e464]
+	(No symbol) [0x7ff7de0f731c]
+	(No symbol) [0x7ff82d077374]
+	(No symbol) [0x7ff82e25cc91]
+</status>
+</kw>
+<status status="FAIL" start="2026-11-20T22:11:59.552639" elapsed="1.285964">ElementClickInterceptedException: Message: element click intercepted: Element &lt;label id="toggleAddBalance" class="styles__Input-sc-1pngcbh-1 dTSgXK"&gt;&lt;/label&gt; is not clickable at point (1409, 582). Other element would receive the click: &lt;span class="styles__Span-sc-1pngcbh-2 fLTrsw"&gt;&lt;/span&gt;
+  (Session info: chrome=157.0.8103.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff7de20d655]
+	(No symbol) [0x7ff7de104790]
+	(No symbol) [0x7ff7ddf72fb3]
+	(No symbol) [0x7ff7de7bc0d2]
+	(No symbol) [0x7ff7de7ba6f3]
+	(No symbol) [0x7ff7de7b8647]
+	(No symbol) [0x7ff7de7b7dce]
+	(No symbol) [0x7ff7de7ac9fa]
+	(No symbol) [0x7ff7de7c90da]
+	(No symbol) [0x7ff7de7ac439]
+	(No symbol) [0x7ff7de7ac3d0]
+	(No symbol) [0x7ff7ddfa6bf1]
+	(No symbol) [0x7ff7ddf8c109]
+	(No symbol) [0x7ff7ddf8d433]
+	(No symbol) [0x7ff7de6a7041]
+	(No symbol) [0x7ff7de6c5c76]
+	(No symbol) [0x7ff7de6bc340]
+	(No symbol) [0x7ff7de33c9be]
+	(No symbol) [0x7ff7de112fa5]
+	(No symbol) [0x7ff7de10e2d4]
+	(No symbol) [0x7ff7de10e464]
+	(No symbol) [0x7ff7de0f731c]
+	(No symbol) [0x7ff82d077374]
+	(No symbol) [0x7ff82e25cc91]
+</status>
+</kw>
+<kw name="Clicar em Cadastrar" owner="bugBank_resource">
+<status status="NOT RUN" start="2026-11-20T22:12:00.839392" elapsed="0.000044"/>
+</kw>
+<kw name="Aguardar confirmação da criação da conta" owner="bugBank_resource">
+<status status="NOT RUN" start="2026-11-20T22:12:00.839601" elapsed="0.000026"/>
+</kw>
+<doc>Esse teste verifica o menu livros do site da Amazom e verifica a categoria o que todo mundo está lendo</doc>
+<tag>categorias</tag>
+<tag>menus</tag>
+<tag>smooke</tag>
+<status status="FAIL" start="2026-11-20T22:11:58.628341" elapsed="2.211549">ElementClickInterceptedException: Message: element click intercepted: Element &lt;label id="toggleAddBalance" class="styles__Input-sc-1pngcbh-1 dTSgXK"&gt;&lt;/label&gt; is not clickable at point (1409, 582). Other element would receive the click: &lt;span class="styles__Span-sc-1pngcbh-2 fLTrsw"&gt;&lt;/span&gt;
+  (Session info: chrome=157.0.8103.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff7de20d655]
+	(No symbol) [0x7ff7de104790]
+	(No symbol) [0x7ff7ddf72fb3]
+	(No symbol) [0x7ff7de7bc0d2]
+	(No symbol) [0x7ff7de7ba6f3]
+	(No symbol) [0x7ff7de7b8647]
+	(No symbol) [0x7ff7de7b7dce]
+	(No symbol) [0x7ff7de7ac9fa]
+	(No symbol) [0x7ff7de7c90da]
+	(No symbol) [0x7ff7de7ac439]
+	(No symbol) [0x7ff7de7ac3d0]
+	(No symbol) [0x7ff7ddfa6bf1]
+	(No symbol) [0x7ff7ddf8c109]
+	(No symbol) [0x7ff7ddf8d433]
+	(No symbol) [0x7ff7de6a7041]
+	(No symbol) [0x7ff7de6c5c76]
+	(No symbol) [0x7ff7de6bc340]
+	(No symbol) [0x7ff7de33c9be]
+	(No symbol) [0x7ff7de112fa5]
+	(No symbol) [0x7ff7de10e2d4]
+	(No symbol) [0x7ff7de10e464]
+	(No symbol) [0x7ff7de0f731c]
+	(No symbol) [0x7ff82d077374]
+	(No symbol) [0x7ff82e25cc91]
+</status>
+</test>
+<test id="s1-t2" name="Caso 02 - Login com a conta criado" line="22">
+<kw name="Acessar a página do BugBank" owner="bugBank_resource">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-11-20T22:12:00.840782" level="INFO">Opening url 'https://bugbank.netlify.app/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-11-20T22:12:00.840678" elapsed="0.073703"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${COLOCAR_EMAIL_LOGIN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-11-20T22:12:00.914597" elapsed="0.007958"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${COLOCAR_SENHA_LOGIN}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-11-20T22:12:00.922699" elapsed="0.005479"/>
+</kw>
+<status status="PASS" start="2026-11-20T22:12:00.840503" elapsed="0.087752"/>
+</kw>
+<kw name="Informar o Email" owner="bugBank_resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-11-20T22:12:00.928953" level="INFO">Clicking element '//form[@class='style__ContainerFormLogin-sc-1wbjw6k-0 eTrcYr']//input[@placeholder='Informe seu e-mail']'.</msg>
+<arg>locator=${COLOCAR_EMAIL_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-20T22:12:00.928766" elapsed="0.038634"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-11-20T22:12:00.967791" level="INFO">Typing text 'teste@exemplo.com' into text field '//form[@class='style__ContainerFormLogin-sc-1wbjw6k-0 eTrcYr']//input[@placeholder='Informe seu e-mail']'.</msg>
+<arg>locator=${COLOCAR_EMAIL_LOGIN}</arg>
+<arg>text=teste@exemplo.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-20T22:12:00.967560" elapsed="0.028756"/>
+</kw>
+<status status="PASS" start="2026-11-20T22:12:00.928539" elapsed="0.067868"/>
+</kw>
+<kw name="Informar a Senha" owner="bugBank_resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-11-20T22:12:00.997146" level="INFO">Clicking element '//form[@class='style__ContainerFormLogin-sc-1wbjw6k-0 eTrcYr']//input[@placeholder='Informe sua senha']'.</msg>
+<arg>locator=${COLOCAR_SENHA_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-20T22:12:00.996954" elapsed="0.021960"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-11-20T22:12:01.019307" level="INFO">Typing password into text field '//form[@class='style__ContainerFormLogin-sc-1wbjw6k-0 eTrcYr']//input[@placeholder='Informe sua senha']'.</msg>
+<msg time="2026-11-20T22:12:01.029287" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>locator=${COLOCAR_SENHA_LOGIN}</arg>
+<arg>password=123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-20T22:12:01.019071" elapsed="0.018845"/>
+</kw>
+<status status="PASS" start="2026-11-20T22:12:00.996718" elapsed="0.041285"/>
+</kw>
+<kw name="Clicar em Acessar" owner="bugBank_resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-11-20T22:12:01.038754" level="INFO">Clicking element '//button[normalize-space()='Acessar']'.</msg>
+<arg>locator=${ACESSAR_CONTA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-11-20T22:12:01.038535" elapsed="0.025046"/>
+</kw>
+<status status="PASS" start="2026-11-20T22:12:01.038297" elapsed="0.025376"/>
+</kw>
+<kw name="Aguardar página Home ser acessada" owner="bugBank_resource">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-11-20T22:12:06.309255" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-11-20T22:12:06.309378" level="FAIL">Element '//a[@id='btnExit']' not visible after 5 seconds.</msg>
+<arg>locator=${SAIR_CONTA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-11-20T22:12:01.064087" elapsed="5.246242">Element '//a[@id='btnExit']' not visible after 5 seconds.</status>
+</kw>
+<status status="FAIL" start="2026-11-20T22:12:01.063875" elapsed="5.246580">Element '//a[@id='btnExit']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Sair do sistema" owner="bugBank_resource">
+<status status="NOT RUN" start="2026-11-20T22:12:06.310708" elapsed="0.000039"/>
+</kw>
+<status status="FAIL" start="2026-11-20T22:12:00.840223" elapsed="5.470695">Element '//a[@id='btnExit']' not visible after 5 seconds.</status>
+</test>
+<kw name="Fechar o navegador" owner="bugBank_resource" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-11-20T22:12:06.311615" elapsed="2.092474"/>
+</kw>
+<status status="PASS" start="2026-11-20T22:12:06.311464" elapsed="2.092753"/>
+</kw>
+<status status="FAIL" start="2026-11-20T22:11:58.026496" elapsed="10.377767"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">categorias</stat>
+<stat pass="0" fail="1" skip="0">menus</stat>
+<stat pass="0" fail="1" skip="0">smooke</stat>
+</tag>
+<suite>
+<stat name="bugBank teste" id="s1" pass="0" fail="2" skip="0">bugBank teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
